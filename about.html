@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="About Giselle Mendoza: education, coursework, skills, and career interests">
+  <meta name="description" content="About Giselle Mendoza: education, coursework, skills, career interests, and life outside engineering">
   <title>About | Giselle Mendoza</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +18,12 @@
 </head>
 <body>
   <header>
-    <img src="logo.svg" alt="gm logo" width="150" height="150">
-    <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
+    <img src="logo.svg" alt="GM logo" width="150" height="150">
+    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -34,63 +34,144 @@
   <main>
     <section id="about" class="page-section">
       <h1>About Me</h1>
-      <figure>
-        <img src="g3.JPG" alt="Giselle Mendoza" width="400" height="600">
-      </figure>
 
-      <section class="card">
-        <h2>Education</h2>
-        <p>
-          I'm pursuing a <strong>B.S. in Computer Engineering</strong> at
-          UC San Diego's Jacobs School of Engineering, with a minor in
-          <em>Economics</em>.
-        </p>
-      </section>
+      <div class="about-layout">
 
-      <section class="card">
-        <h2>Relevant Coursework</h2>
-        <ol>
-          <li>ECE 45 — Circuits and Systems</li>
-          <li>ECE 65 — Components and Circuits Laboratory</li>
-          <li>ECE 101 — Linear Systems Fundamentals</li>
-          <li>ECE 108 — Digital Circuits</li>
-          <li>ECE 111 — Advanced Digital Design Project</li>
-          <li>ECE 171A — Linear Control System Theory</li>
-          <li>ECE 196 — Engineering Hands-on Group Project</li>
-          <li>CSE 100 — Advanced Data Structures</li>
-          <li>CSE 142 — Computer Architecture, Software Perspective</li>
-        </ol>
-      </section>
+        <!-- Left side: all the text -->
+        <div class="about-main">
 
-      <section class="card">
-        <h2>Technical Skills</h2>
-        <p><strong>Languages:</strong> C/C++, MATLAB, Python, Java, SystemVerilog</p>
-        <p><strong>Microcontrollers &amp; Hardware:</strong> ESP32, Arduino, Raspberry Pi, STM32L475</p>
-        <p><strong>Software &amp; Design Tools:</strong> LVGL, SquareLine Studio, Git, GitHub, SolidWorks, KiCad, Cadence Virtuoso, LTspice</p>
-      </section>
+          <section class="card">
+            <h2>Education</h2>
+            <p>
+              I'm pursuing a <strong>B.S. in Computer Engineering</strong> at
+              UC San Diego's Jacobs School of Engineering, with a minor in
+              <em>Economics</em>.
+            </p>
+          </section>
 
-      <section class="card">
-        <h2>Career Interests</h2>
-        <p>
-          Through my coursework and projects, I've discovered that I'm most
-          interested in <em>control systems</em> and <em>embedded systems</em>,
-          especially the connection between hardware and software. I hope to
-          pursue a career in <em>embedded firmware</em> or <em>controls engineering</em>,
-          where I can keep contributing to <strong>innovation</strong> in these fields.
-        </p>
-      </section>
+          <section class="card">
+            <h2>Relevant Coursework</h2>
+
+            <div class="course-columns">
+              <div>
+                <h3>Software &amp; Systems</h3>
+                <ul>
+                  <li>CSE 12 — Basic Data Structures and Object-Oriented Design</li>
+                  <li>CSE 15L — Software Tools and Techniques Laboratory</li>
+                  <li>CSE 100 — Advanced Data Structures</li>
+                  <li>CSE 101 — Design and Analysis of Algorithms</li>
+                  <li>CSE 120 — Operating Systems Principles</li>
+                  <li>CSE 134B — Web Client Languages</li>
+                  <li>CSE 142 — Computer Architecture: A Software Perspective</li>
+                  <li>CSE 190 — Topics in CSE: Wireless Embedded Systems</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3>AI &amp; Machine Learning</h3>
+                <ul>
+                  <li>CSE 150A — AI: Probabilistic Reasoning and Decision-Making</li>
+                  <li>CSE 151A — Machine Learning: Learning Algorithms</li>
+                  <li>CSE 151B — Deep Learning</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2>Technical Skills</h2>
+            <p><strong>Languages:</strong> C/C++, MATLAB, Python, Java, SystemVerilog</p>
+            <p><strong>Microcontrollers &amp; Hardware:</strong> ESP32, Arduino, Raspberry Pi, STM32L475</p>
+            <p><strong>Software &amp; Design Tools:</strong> LVGL, SquareLine Studio, Git, GitHub, SolidWorks, KiCad, Cadence Virtuoso, LTspice</p>
+          </section>
+
+          <section class="card">
+            <h2>Career Interests</h2>
+            <p>
+              Through my coursework and projects, I've discovered that I'm most
+              interested in software and embedded systems. I hope to
+              pursue a career in software engineering or firmware engineering,
+              where I can keep contributing to innovation in these fields.
+            </p>
+          </section>
+
+          <h2 class="about-subheading">Beyond Engineering</h2>
+
+          <section class="card">
+            <h2>Work Outside of Class</h2>
+
+            <h4>Sales Associate, Nordstrom</h4>
+            <span>September 2026 – Present</span>
+            <p>Helping customers find what they need and building
+            the people skills that come from working with the public every day.</p>
+
+            <h4>Culinary &amp; Market Services, UCSD Dining</h4>
+            <span>October 2022 – June 2026</span>
+            <p>Worked in a fast-paced dining hall serving large numbers of students,
+              which taught me teamwork, reliability, and staying calm during busy rushes.</p>
+          </section>
+
+          <section class="card">
+            <h2>Live Music &amp; Travel</h2>
+            <p>Outside of school and work, live music and traveling are two of my biggest 
+              passions. Concerts are my favorite way to recharge and exploring new places 
+              is how I learn the most about the world and about myself.</p>
+
+            <p><strong>Places I've been:</strong></p>
+            <ul class="tags">
+              <li>Seattle, WA</li>
+              <li>Phoenix, AZ</li>
+              <li>Los Angeles, CA</li>
+              <li>San Francisco, CA</li>
+              <li>Las Vegas, NV</li>
+              <li>New York, NY</li>
+              <li>Cancun, MX</li>
+              <li>Rosarito, MX</li>
+              <li>Mexico City, MX</li>
+              <li>Guadalajara, MX</li>
+            </ul>
+
+            <p><strong>Artists I've seen live:</strong></p>
+            <ul class="tags">
+              <li>Junior H</li>
+              <li>Peso Pluma</li>
+              <li>Fuerza Regida</li>
+              <li>Calle 24</li>
+              <li>Rauw Alejandro</li>
+              <li>Gunna</li>
+              <li>DSavage</li>
+              <li>Autum</li>
+              <li>Ross Lynch</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <!-- Right side: your photo -->
+        <figure class="about-photo">
+          <img src="g1.JPG" alt="Giselle Mendoza" width="400" height="600">
+        </figure>
+
+      </div>
     </section>
   </main>
 
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="https://linkedin.com/in/giselle-mendoza">LinkedIn</a></li>
-        <li><a href="mailto:g1mendoza@ucsd.edu">Email</a></li>
-      </ul>
-    </nav>
-    <p>&copy; 2026 Giselle Mendoza.</p>
+ <footer>
+    <hr>
+    <address class="social-icons">
+      <a href="https://www.linkedin.com/in/giselle-mendoza" target="_blank" rel="noopener noreferrer">
+        <img src="linkedin-light.svg" alt="LinkedIn" width="32" height="32">
+      </a>
+      <a href="mailto:g1mendoza@ucsd.edu">
+        <img src="email-light.svg" alt="Email" width="32" height="32">
+      </a>
+      <a href="https://github.com/g1mendoza" target="_blank" rel="noopener noreferrer">
+        <img src="github-light.svg" alt="GitHub" width="32" height="32">
+      </a>
+    </address>
+    <p>&copy; 2026 Giselle Mendoza. All rights reserved.</p>
   </footer>
+
   <script src="jas.js"></script>
 </body>
 </html>

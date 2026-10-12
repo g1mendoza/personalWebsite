@@ -1,70 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Giselle Mendoza's home page for personal site">
-    <title>Giselle Mendoza | Portfolio</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Giselle Mendoza: Computer Engineering student at UC San Diego looking for software engineering and data analysis roles">
+  <title>Giselle Mendoza | Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&family=Lora:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-    <noscript>
-      <style>
-        header nav { display: block !important; position: static !important; }
-        .menu-toggle { display: none !important; }
-      </style>
-    </noscript>
-  </head>
+  <link rel="stylesheet" href="style.css">
+  <noscript>
+    <style>
+      header nav { display: block !important; position: static !important; }
+      .menu-toggle { display: none !important; }
+    </style>
+  </noscript>
+</head>
 
-  <body>
-    <header>
-      <img src="logo.svg" alt="gm logo" width="150" height="150">
+<body>
+  <header>
+    <img src="logo.svg" alt="gm logo" width="150" height="150">
+    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <!-- js -->
-      <button class="menu-toggle" aria-label="Open navigation menu">
-        ☰
-      </button>
-
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section id="home">
-        <h1>Giselle Mendoza</h1>
-        <p>
-          Computer Engineering student at UC San Diego. Through my coursework and projects,
-          I've had the opportunity to explore many areas of engineering. Along the way, I've
-          discovered that I'm most interested in embedded systems and software engineering.
-          I'm especially passionate about the connection between hardware and software. I
-          hope to pursue a career in those fields where I can contribute to innovation.
+  <main>
+    <section id="home">
+      <h1>Giselle Mendoza</h1>
+      <div class="terminal">
+        <div class="terminal-bar" aria-hidden="true">
+          <i></i><i></i><i></i>
+          <span class="terminal-title">giselle@portfolio ~ %</span>
+        </div>
+        <p class="typewriter">
+          HELLO, I'm Giselle! I love figuring out how things work.
+          From circuits to code and exploring the intersection of 
+          hardware and software. When I'm not building something, 
+          you'll probably find me at a concert or planning my next trip
         </p>
-        <figure>
-          <img src="g1.JPG" alt="Giselle Mendoza" width="500" height="500">
-        </figure>
-      </section>
-    </main>
+      </div>
+      <figure>
+        <img src="g4.JPG" alt="Giselle Mendoza" width="500" height="500">
+      </figure>
+    </section>
 
-    <footer>
-      <nav>
+    <section id="looking-for" class="page-section">
+      <h2>What I'm Looking For</h2>
+      <section class="card">
+        <h3>Internships &amp; Full-Time Roles</h3>
+        <p>I'm graduating in June 2027 and looking for opportunities in:</p>
         <ul>
-          <li><a href="https://linkedin.com/in/giselle-mendoza">LinkedIn</a></li>
-          <li><a href="mailto:g1mendoza@ucsd.edu">Email</a></li>
+          <li><strong>Software engineering:</strong> building and shipping real software, with a strong foundation in C/C++, Python, and low-level systems.</li>
+          <li><strong>Data analysis:</strong> roles where I can pair my computer science skills with my economics minor to turn data into better decisions.</li>
         </ul>
-      </nav>
-      <p>&copy; 2026 Giselle Mendoza.</p>
-    </footer>
+        <p>I also have a strong interest in embedded systems and controls. If you think I'd be a good fit, <a href="contact.html">get in touch</a>.</p>
+      </section>
+    </section>
 
-    <script src="jas.js"></script>
-  </body>
+  </main>
+
+  <footer>
+    <hr>
+    <address class="social-icons">
+      <a href="https://www.linkedin.com/in/giselle-mendoza" target="_blank" rel="noopener noreferrer">
+        <img src="linkedin-light.svg" alt="LinkedIn" width="32" height="32">
+      </a>
+      <a href="mailto:g1mendoza@ucsd.edu">
+        <img src="email-light.svg" alt="Email" width="32" height="32">
+      </a>
+      <a href="https://github.com/g1mendoza" target="_blank" rel="noopener noreferrer">
+        <img src="github-light.svg" alt="GitHub" width="32" height="32">
+      </a>
+    </address>
+    <p>&copy; 2026 Giselle Mendoza. All rights reserved.</p>
+  </footer>
+
+
+  <script src="jas.js"></script>
+</body>
 </html>
