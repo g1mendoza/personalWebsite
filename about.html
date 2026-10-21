@@ -5,20 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="About Giselle Mendoza: education, coursework, skills, career interests, and life outside engineering">
   <title>About | Giselle Mendoza</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="newStyle.css">
+  <script>document.documentElement.classList.add("js");</script>
   <noscript>
     <style>
-      header nav { display: block !important; position: static !important; }
+      .masthead nav { display: block !important; position: static !important; }
       .menu-toggle { display: none !important; }
     </style>
   </noscript>
 </head>
 <body>
-  <header>
-    <img src="logo.svg" alt="GM logo" width="150" height="150">
+  <header class="masthead">
+    <a class="brand" href="index.html" aria-label="Giselle Mendoza, home">
+      <img src="logo-navy.svg" alt="gm logo" width="150" height="150">
+    </a>
     <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
     <nav>
       <ul>
@@ -31,135 +36,116 @@
     </nav>
   </header>
 
-  <main>
-    <section id="about" class="page-section">
-      <h1>About Me</h1>
+  <main class="page">
+    <div class="page-head">
+      <p class="eyebrow">Feature 01</p>
+      <h1>About <em>me</em></h1>
+      <p class="page-sub">Computer engineering by day, trip-planner the rest of the time.</p>
+    </div>
 
-      <div class="about-layout">
+    <div class="about-grid">
 
-        <!-- Left side: all the text -->
-        <div class="about-main">
+      <!-- Left: the article -->
+      <div class="about-main">
 
-          <section class="card">
-            <h2>Education</h2>
-            <p>
-              I'm pursuing a <strong>B.S. in Computer Engineering</strong> at
-              UC San Diego's Jacobs School of Engineering, with a minor in
-              <em>Economics</em>.
-            </p>
-          </section>
+        <section class="article-block reveal">
+          <p class="eyebrow">Education</p>
+          <p class="lead">
+            I'm pursuing a <em>B.S. in Computer Engineering</em> at UC San Diego's
+            Jacobs School of Engineering, with a minor in <em>Economics</em>.
+          </p>
+        </section>
 
-          <section class="card">
-            <h2>Relevant Coursework</h2>
+        <section class="article-block reveal">
+          <p class="eyebrow">Career interests</p>
+          <p>
+            I'm looking for <strong>software engineering</strong> and <strong>data analysis</strong>
+            roles where I can pair computer science with my economics minor. I'm also drawn to
+            <strong>embedded systems</strong>, especially the connection between hardware and 
+            software. I hope to keep contributing to innovation in these fields.
+          </p>
+        </section>
 
-            <div class="course-columns">
-              <div>
-                <h3>Software &amp; Systems</h3>
-                <ul>
-                  <li>CSE 12 — Basic Data Structures and Object-Oriented Design</li>
-                  <li>CSE 15L — Software Tools and Techniques Laboratory</li>
-                  <li>CSE 100 — Advanced Data Structures</li>
-                  <li>CSE 101 — Design and Analysis of Algorithms</li>
-                  <li>CSE 120 — Operating Systems Principles</li>
-                  <li>CSE 134B — Web Client Languages</li>
-                  <li>CSE 142 — Computer Architecture: A Software Perspective</li>
-                  <li>CSE 190 — Topics in CSE: Wireless Embedded Systems</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3>AI &amp; Machine Learning</h3>
-                <ul>
-                  <li>CSE 150A — AI: Probabilistic Reasoning and Decision-Making</li>
-                  <li>CSE 151A — Machine Learning: Learning Algorithms</li>
-                  <li>CSE 151B — Deep Learning</li>
-                </ul>
-              </div>
+        <section class="article-block reveal">
+          <p class="eyebrow">Relevant coursework</p>
+          <div class="course-cols">
+            <div>
+              <h3>Software &amp; Systems</h3>
+              <ul class="course-list">
+                <li><span class="code">CSE 12</span><span>Basic Data Structures and Object-Oriented Design</span></li>
+                <li><span class="code">CSE 15L</span><span>Software Tools and Techniques Laboratory</span></li>
+                <li><span class="code">CSE 100</span><span>Advanced Data Structures</span></li>
+                <li><span class="code">CSE 101</span><span>Design and Analysis of Algorithms</span></li>
+                <li><span class="code">CSE 120</span><span>Operating Systems Principles</span></li>
+                <li><span class="code">CSE 134B</span><span>Web Client Languages</span></li>
+                <li><span class="code">CSE 142</span><span>Computer Architecture: A Software Perspective</span></li>
+                <li><span class="code">CSE 190</span><span>Topics in CSE: Wireless Embedded Systems</span></li>
+              </ul>
             </div>
-          </section>
+            <div>
+              <h3>AI &amp; Machine Learning</h3>
+              <ul class="course-list">
+                <li><span class="code">CSE 150A</span><span>AI: Probabilistic Reasoning and Decision-Making</span></li>
+                <li><span class="code">CSE 151A</span><span>Machine Learning: Learning Algorithms</span></li>
+                <li><span class="code">CSE 151B</span><span>Deep Learning</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-          <section class="card">
-            <h2>Technical Skills</h2>
-            <p><strong>Languages:</strong> C/C++, MATLAB, Python, Java, SystemVerilog</p>
-            <p><strong>Microcontrollers &amp; Hardware:</strong> ESP32, Arduino, Raspberry Pi, STM32L475</p>
-            <p><strong>Software &amp; Design Tools:</strong> LVGL, SquareLine Studio, Git, GitHub, SolidWorks, KiCad, Cadence Virtuoso, LTspice</p>
-          </section>
+        <section class="article-block dots-card reveal">
+          <p class="eyebrow">Technical skills</p>
+          <h3>Languages</h3>
+          <ul class="chips"><li>C/C++</li><li>MATLAB</li><li>Python</li><li>Java</li><li>SystemVerilog</li></ul>
+          <h3>Microcontrollers &amp; hardware</h3>
+          <ul class="chips"><li>ESP32</li><li>Arduino</li><li>Raspberry Pi</li><li>STM32L475</li></ul>
+          <h3>Software &amp; design tools</h3>
+          <ul class="chips"><li>LVGL</li><li>SquareLine Studio</li><li>Git</li><li>GitHub</li><li>SolidWorks</li><li>KiCad</li><li>Cadence Virtuoso</li><li>LTspice</li></ul>
+        </section>
 
-          <section class="card">
-            <h2>Career Interests</h2>
-            <p>
-              Through my coursework and projects, I've discovered that I'm most
-              interested in software and embedded systems. I hope to
-              pursue a career in software engineering or firmware engineering,
-              where I can keep contributing to innovation in these fields.
-            </p>
-          </section>
+        <section class="beyond">
+          <h2 class="section-title reveal">Beyond engineering</h2>
+          <div class="beyond-grid">
 
-          <h2 class="about-subheading">Beyond Engineering</h2>
+            <article class="paper-card reveal">
+              <p class="eyebrow">Work outside of class</p>
+              <h3>Sales Associate, Nordstrom</h3>
+              <p class="dates">Fall 2026</p>
+              <p>Helped customers find what they needed and built people skills working with the public.</p>
+              <h3>Culinary &amp; Market Services, UCSD Dining</h3>
+              <p class="dates">October 2022 – June 2026</p>
+              <p>Worked in a fast-paced dining hall serving large numbers of students, which taught me teamwork, reliability, and staying calm during busy rushes.</p>
+            </article>
 
-          <section class="card">
-            <h2>Work Outside of Class</h2>
+            <article class="paper-card reveal">
+              <p class="eyebrow">Live music &amp; travel</p>
+              <p>Outside of school and work, live music and traveling are two of my biggest passions. Concerts are my favorite way to recharge, and exploring new places is how I learn the most about the world and about myself.</p>
+              <h3>Places I've been</h3>
+              <ul class="chips"><li>Seattle, WA</li><li>Phoenix, AZ</li><li>Los Angeles, CA</li><li>San Francisco, CA</li><li>Las Vegas, NV</li><li>New York, NY</li><li>Cancun, MX</li><li>Rosarito, MX</li><li>Mexico City, MX</li><li>Guadalajara, MX</li></ul>
+              <h3>Artists I've seen live</h3>
+              <ul class="chips"><li>Junior H</li><li>Peso Pluma</li><li>Fuerza Regida</li><li>Calle 24</li><li>Rauw Alejandro</li><li>Gunna</li><li>DSavage</li><li>Autumn</li><li>Ross Lynch</li></ul>
+            </article>
 
-            <h4>Sales Associate, Nordstrom</h4>
-            <span>September 2026 – Present</span>
-            <p>Helping customers find what they need and building
-            the people skills that come from working with the public every day.</p>
-
-            <h4>Culinary &amp; Market Services, UCSD Dining</h4>
-            <span>October 2022 – June 2026</span>
-            <p>Worked in a fast-paced dining hall serving large numbers of students,
-              which taught me teamwork, reliability, and staying calm during busy rushes.</p>
-          </section>
-
-          <section class="card">
-            <h2>Live Music &amp; Travel</h2>
-            <p>Outside of school and work, live music and traveling are two of my biggest 
-              passions. Concerts are my favorite way to recharge and exploring new places 
-              is how I learn the most about the world and about myself.</p>
-
-            <p><strong>Places I've been:</strong></p>
-            <ul class="tags">
-              <li>Seattle, WA</li>
-              <li>Phoenix, AZ</li>
-              <li>Los Angeles, CA</li>
-              <li>San Francisco, CA</li>
-              <li>Las Vegas, NV</li>
-              <li>New York, NY</li>
-              <li>Cancun, MX</li>
-              <li>Rosarito, MX</li>
-              <li>Mexico City, MX</li>
-              <li>Guadalajara, MX</li>
-            </ul>
-
-            <p><strong>Artists I've seen live:</strong></p>
-            <ul class="tags">
-              <li>Junior H</li>
-              <li>Peso Pluma</li>
-              <li>Fuerza Regida</li>
-              <li>Calle 24</li>
-              <li>Rauw Alejandro</li>
-              <li>Gunna</li>
-              <li>DSavage</li>
-              <li>Autum</li>
-              <li>Ross Lynch</li>
-            </ul>
-          </section>
-
-        </div>
-
-        <!-- Right side: your photo -->
-        <figure class="about-photo">
-          <img src="g1.JPG" alt="Giselle Mendoza" width="400" height="600">
-        </figure>
-
+          </div>
+        </section>
       </div>
-    </section>
+
+      <!-- Right: portrait -->
+      <aside class="about-aside">
+        <figure class="cover-photo">
+          <div class="arch">
+            <img src="g3.JPG" alt="Giselle Mendoza" width="400" height="600">
+          </div>
+        </figure>
+      </aside>
+
+    </div>
   </main>
 
- <footer>
-    <hr>
+  <footer class="site-footer">
+    <p class="script">thanks for reading</p>
     <address class="social-icons">
-      <a href="https://www.linkedin.com/in/giselle-mendoza" target="_blank" rel="noopener noreferrer">
+      <a href="https://linkedin.com/in/giselle-mendoza" target="_blank" rel="noopener noreferrer">
         <img src="linkedin-light.svg" alt="LinkedIn" width="32" height="32">
       </a>
       <a href="mailto:g1mendoza@ucsd.edu">
@@ -169,7 +155,7 @@
         <img src="github-light.svg" alt="GitHub" width="32" height="32">
       </a>
     </address>
-    <p>&copy; 2026 Giselle Mendoza. All rights reserved.</p>
+    <p class="fine">&copy; 2026 Giselle Mendoza. All rights reserved.</p>
   </footer>
 
   <script src="jas.js"></script>

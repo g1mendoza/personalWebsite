@@ -5,20 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Giselle Mendoza's teaching and research experience">
   <title>Experience | Giselle Mendoza</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="newStyle.css">
+  <script>document.documentElement.classList.add("js");</script>
   <noscript>
     <style>
-      header nav { display: block !important; position: static !important; }
+      .masthead nav { display: block !important; position: static !important; }
       .menu-toggle { display: none !important; }
     </style>
   </noscript>
 </head>
 <body>
-  <header>
-    <img src="logo.svg" alt="gm logo" width="150" height="150">
+  <header class="masthead">
+    <a class="brand" href="index.html" aria-label="Giselle Mendoza, home">
+      <img src="logo-navy.svg" alt="gm logo" width="150" height="150">
+    </a>
     <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
     <nav>
       <ul>
@@ -31,114 +36,88 @@
     </nav>
   </header>
 
-  <main>
-    <section id="experience" class="page-section">
-      <h1>Experience</h1>
+  <main class="page">
+    <div class="page-head">
+      <p class="eyebrow">Feature 03</p>
+      <h1>Where I've <em>worked</em></h1>
+      <p class="page-sub">Teaching STEM to kids and doing research in optics.</p>
+    </div>
 
-      <!-- ===================== TREOBYTES ===================== -->
-      <section class="card">
-        <img src="tlogo.jpeg" alt="Treobytes logo" width="150" height="150">
-        <h2>Treobytes <i>— San Diego, CA</i></h2>
-        <p class="org-dates">Summer 2025 – Present</p>
+    <!-- ===== Treobytes ===== -->
+    <article class="exp reveal">
+      <div class="exp-side">
+        <img class="exp-logo" src="tlogo.jpeg" alt="Treobytes logo" width="150" height="150">
+        <h2>Treobytes</h2>
+        <p class="eyebrow">San Diego, CA</p>
+        <p class="dates">Summer 2025 – Present</p>
+      </div>
+
+      <div class="exp-body">
+        <div class="role">
+            <h3>STEM Facilitator</h3>
+            <p class="dates">August 2025 – Present</p>
+            <ul><li>Led project-based STEM classes for middle school students, focusing on coding and hardware.</li><li>Created an inclusive and collaborative classroom environment for 20–25 students, encouraging teamwork and curiosity.</li><li>Collaborated with co-facilitators to adapt instruction, manage classrooms effectively, and support student success.</li></ul>
+            <ul class="chips"><li>Curriculum Delivery</li><li>Classroom Management</li><li>STEM Education</li><li>Arduino</li><li>Coding</li><li>Music Technology</li><li>Educational Technology</li></ul>
+          </div>
 
         <div class="role">
-          <h3>STEM Facilitator</h3>
-          <span>August 2025 – Present</span>
-          <ul>
-            <li>Led project-based STEM classes for middle school students, focusing on coding and hardware.</li>
-            <li>Created an inclusive and collaborative classroom environment for 20–25 students,
-                encouraging teamwork and curiosity.</li>
-            <li>Collaborated with co-facilitators to adapt instruction, manage classrooms effectively,
-                and support student success.</li>
-          </ul>
-          <p><strong>Skills:</strong> Curriculum Delivery, Classroom Management, STEM Education, Arduino, Coding, Music Technology, Educational Technology</p>
-        </div>
+            <h3>Summer STEM Facilitator, Sally Ride STEM Camp</h3>
+            <p class="dates">June 2025 – July 2025</p>
+            <ul><li>Taught two classes to different age groups (see below).</li><li>Completed onboarding, anti-harassment, and classroom management training through Treobytes prior to teaching.</li><li>Obtained Adult and Pediatric First Aid/CPR/AED certification as a program requirement.</li></ul>
+            <ul class="chips"><li>Curriculum Delivery</li><li>Classroom Management</li><li>STEM Education</li><li>Educational Technology</li><li>CAD</li><li>3D Printing</li><li>CPR/First Aid Certified</li></ul>
+          </div>
 
-        <div class="role">
-          <h3>Summer STEM Facilitator, Sally Ride STEM Camp</h3>
-          <span>June 2025 – July 2025</span>
-          <ul>
-            <li>Taught two classes to different age groups (see below).</li>
-            <li>Completed onboarding, anti-harassment, and classroom management training through
-                Treobytes prior to teaching.</li>
-            <li>Obtained Adult and Pediatric First Aid/CPR/AED certification as a program requirement.</li>
-          </ul>
-          <p><strong>Skills:</strong> Curriculum Delivery, Classroom Management, STEM Education, Educational Technology, CAD, 3D Printing, CPR/First Aid Certified</p>
-        </div>
-
-        <!-- One small card for each class I taught -->
-        <h3 class="classes-heading">Classes I Taught</h3>
+        <h3 class="classes-heading">Classes I taught</h3>
         <div class="class-grid">
-
           <article class="class-card">
-            <h4>STEMFaire: Hands-On Engineering</h4>
-            <p class="class-meta">3rd–5th grade · Sally Ride STEM Camp</p>
-            <ul class="class-points">
-              <li>Introduced core engineering,physics and math concepts</li>
-              <li>Guided hands-on projects that showcased these concepts</li>
-            </ul>
-          </article>
-
+              <h4>STEMFaire: Hands-On Engineering</h4>
+              <p class="class-meta">3rd–5th grade · Sally Ride STEM Camp</p>
+              <ul class="class-points"><li>Introduced core engineering concepts</li><li>Guided hands-on projects</li></ul>
+            </article>
           <article class="class-card">
-            <h4>CAD &amp; 3D Printing</h4>
-            <p class="class-meta">6th–8th grade · Sally Ride STEM Camp</p>
-            <ul class="class-points">
-              <li>Taught CAD fundamentals</li>
-              <li>Guided students through designing and printing their own 3D models</li>
-              <li>Hands-on 3D printing</li>
-            </ul>
-          </article>
-          
+              <h4>CAD &amp; 3D Printing</h4>
+              <p class="class-meta">6th–8th grade · Sally Ride STEM Camp</p>
+              <ul class="class-points"><li>Taught CAD fundamentals</li><li>Hands-on 3D printing</li></ul>
+            </article>
           <article class="class-card">
-            <h4>Arduino</h4>
-            <p class="class-meta">6th–8th grade · After-school course</p>
-            <ul class="class-points">
-              <li>Programming: Taught coding fundamentals including loops, conditionals, and functions</li>
-              <li>Circuit Design:Covered components, configurations, and series/parallel wiring</li>
-              <li>Prototyping: Simulated circuits in Tinkercad before building with physical boards</li>
-              <li>STEM Projects: Guided assembly of interactive Simon games, doorbells, and night lights</li>
-            </ul>
-          </article>  
-
+              <h4>Arduino</h4>
+              <p class="class-meta">Middle school · Fall 2025</p>
+              <ul class="class-points"><li>Started with basic circuits: LEDs, series, and parallel</li><li>Simulated in TinkerCAD, then built with Arduino boards</li><li>Projects: Simon game, doorbell, night light, theremin</li></ul>
+            </article>
           <article class="class-card">
-            <h4>Music Technology</h4>
-            <p class="class-meta">4th–6th grade · After-school course</p>
-            <ul class="class-points">
-              <li>Digital Production: Composed, arranged, and mixed multi-layer songs in Soundtrap</li>
-              <li>Music Theory: Taught rhythm, tempo, scales, and building 4-chord progressions</li>
-              <li>MIDI Hardware: Integrated AKAI minis, Launchpads, and custom Arduino keyboards</li>
-              <li>Audio Engineering: Taught EQ, panning, and mixing techniques</li>
-            </ul>
-          </article>
-
+              <h4>Music Technology</h4>
+              <p class="class-meta">4th–6th grade · After-school course</p>
+              <ul class="class-points"><li>Composed, mixed, and exported songs in Soundtrap</li><li>Played music on MIDI controllers, including an Arduino keyboard</li></ul>
+            </article>
         </div>
-      </section>
+      </div>
+    </article>
 
-      <!-- ===================== UCSD ECE ===================== -->
-      <section class="card">
-        <img src="ecelogo.png" alt="UC San Diego ECE Department logo" width="200" height="120">
-        <h2>UC San Diego ECE Department <i>— San Diego, CA</i></h2>
+    <!-- ===== UCSD ECE ===== -->
+    <article class="exp reveal">
+      <div class="exp-side">
+        <img class="exp-logo" src="ecelogo.png" alt="UC San Diego ECE Department logo" width="200" height="120">
+        <h2>UC San Diego ECE Department</h2>
+        <p class="eyebrow">San Diego, CA</p>
+        <p class="dates">August 2024 – August 2025</p>
+      </div>
 
+      <div class="exp-body">
         <div class="role">
-          <h3>Undergraduate Research Assistant</h3>
-          <span>August 2024 – August 2025</span>
-          <ul>
-            <li>Designed educational games integrating software and hardware to teach optics and photonics concepts,
-                as part of research under Dr. Baghdadchi.</li>
-            <li>Developed an optics project demonstrating solar energy applications, designing
-                circuits with solar panels, op-amps, LEDs, and capacitors to control light responsiveness.</li>
-          </ul>
-          <p><strong>Skills:</strong> Arduino, Microcontrollers, Circuit Design, C/C++, CAD, 3D Printing, Laser Cutting, Soldering</p>
-          <p><a href="https://github.com/UCSD-Optics-Maze-Educational-Games">Optics Maze Educational Games on GitHub</a></p>
-        </div>
-      </section>
-    </section>
+            <h3>Undergraduate Research Assistant</h3>
+            <p class="dates">August 2024 – August 2025</p>
+            <ul><li>Designed educational games integrating software and hardware to teach optics and photonics concepts, as part of research under Dr. Baghdadchi.</li><li>Developed an optics project demonstrating solar energy applications, designing circuits with solar panels, op-amps, LEDs, and capacitors to control light responsiveness.</li></ul>
+            <ul class="chips"><li>Arduino</li><li>Microcontrollers</li><li>Circuit Design</li><li>C/C++</li><li>CAD</li><li>3D Printing</li><li>Laser Cutting</li><li>Soldering</li></ul>
+          </div>
+        <p><a class="text-link" href="https://github.com/UCSD-Optics-Maze-Educational-Games">Optics Maze Educational Games on GitHub →</a></p>
+      </div>
+    </article>
   </main>
 
-  <footer>
-    <hr>
+  <footer class="site-footer">
+    <p class="script">thanks for reading</p>
     <address class="social-icons">
-      <a href="https://www.linkedin.com/in/giselle-mendoza" target="_blank" rel="noopener noreferrer">
+      <a href="https://linkedin.com/in/giselle-mendoza" target="_blank" rel="noopener noreferrer">
         <img src="linkedin-light.svg" alt="LinkedIn" width="32" height="32">
       </a>
       <a href="mailto:g1mendoza@ucsd.edu">
@@ -148,7 +127,7 @@
         <img src="github-light.svg" alt="GitHub" width="32" height="32">
       </a>
     </address>
-    <p>&copy; 2026 Giselle Mendoza. All rights reserved.</p>
+    <p class="fine">&copy; 2026 Giselle Mendoza. All rights reserved.</p>
   </footer>
 
   <script src="jas.js"></script>

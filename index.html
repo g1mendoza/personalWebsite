@@ -8,20 +8,24 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&family=Lora:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="newStyle.css">
+  <script>document.documentElement.classList.add("js");</script>
   <noscript>
     <style>
-      header nav { display: block !important; position: static !important; }
+      .masthead nav { display: block !important; position: static !important; }
       .menu-toggle { display: none !important; }
     </style>
   </noscript>
 </head>
 
 <body>
-  <header>
-    <img src="logo.svg" alt="gm logo" width="150" height="150">
+
+  <header class="masthead">
+    <a class="brand" href="index.html" aria-label="Giselle Mendoza, home">
+      <img src="logo-navy.svg" alt="gm logo" width="150" height="150">
+    </a>
     <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
     <nav>
       <ul>
@@ -35,44 +39,175 @@
   </header>
 
   <main>
-    <section id="home">
-      <h1>Giselle Mendoza</h1>
-      <div class="terminal">
-        <div class="terminal-bar" aria-hidden="true">
-          <i></i><i></i><i></i>
-          <span class="terminal-title">giselle@portfolio ~ %</span>
-        </div>
-        <p class="typewriter">
-          HELLO, I'm Giselle! I love figuring out how things work.
-          From circuits to code and exploring the intersection of 
-          hardware and software. When I'm not building something, 
-          you'll probably find me at a concert or planning my next trip
-        </p>
-      </div>
-      <figure>
-        <img src="g4.JPG" alt="Giselle Mendoza" width="500" height="500">
-      </figure>
-    </section>
+    <!-- ============ COVER ============ -->
+    <section class="cover" aria-labelledby="cover-title">
+      <h1 id="cover-title" class="cover-title">Giselle <em>Mendoza</em></h1>
 
-    <section id="looking-for" class="page-section">
-      <h2>What I'm Looking For</h2>
-      <section class="card">
-        <h3>Internships &amp; Full-Time Roles</h3>
-        <p>I'm graduating in June 2027 and looking for opportunities in:</p>
-        <ul>
-          <li><strong>Software engineering:</strong> building and shipping real software, with a strong foundation in C/C++, Python, and low-level systems.</li>
-          <li><strong>Data analysis:</strong> roles where I can pair my computer science skills with my economics minor to turn data into better decisions.</li>
+      <div class="cover-stage">
+        <ul class="cover-lines cover-lines--left">
+          <li>
+            <small>Inside</small>
+            <strong>From circuits to code</strong>
+            <span>A custom PCB, a line-following robot &amp; more</span>
+          </li>
+          <li>
+            <small>Feature</small>
+            <strong>Teaching STEM, one circuit at a time</strong>
+            <span>Arduino, CAD &amp; music tech for kids</span>
+          </li>
         </ul>
-        <p>I also have a strong interest in embedded systems and controls. If you think I'd be a good fit, <a href="contact.html">get in touch</a>.</p>
-      </section>
+
+        <figure class="cover-photo">
+          <div class="arch">
+            <img src="pheadshot.png" alt="Giselle Mendoza" width="500" height="650">
+          </div>
+          <div class="badge" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <defs><path id="badge-circle" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+              <text>
+                <textPath href="#badge-circle" textLength="470" lengthAdjust="spacing">OPEN TO WORK • SWE &amp; DATA ROLES • CLASS OF 2027 •</textPath>
+              </text>
+            </svg>
+            <span class="badge-center">’27</span>
+          </div>
+        </figure>
+
+        <ul class="cover-lines cover-lines--right">
+          <li>
+            <small>On the road</small>
+            <strong>Concerts, cities &amp; road trips</strong>
+            <span>10 places and counting</span>
+          </li>
+          <li>
+            <small>UC San Diego</small>
+            <strong>Computer Engineering + Economics</strong>
+            <span>Class of 2027</span>
+          </li>
+        </ul>
+      </div>
     </section>
 
+    <!-- ============ TICKER ============ -->
+    <div class="ticker" aria-label="Interests: embedded systems, software engineering, controls, data analysis, hardware design">
+      <div class="ticker-track">
+        <ul>
+          <li>Embedded Systems</li><li>Software Engineering</li><li>Controls</li><li>Data Analysis</li><li>Hardware Design</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Embedded Systems</li><li>Software Engineering</li><li>Controls</li><li>Data Analysis</li><li>Hardware Design</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============ LETTER FROM THE EDITOR ============ -->
+    <section class="letter" aria-labelledby="letter-title">
+      <figure class="polaroid reveal">
+        <img src="g1.JPG" alt="Giselle Mendoza smiling" width="400" height="500">
+        <figcaption>currently building things</figcaption>
+      </figure>
+
+      <div class="letter-text">
+        <p class="eyebrow">From the Engineer</p>
+        <h2 id="letter-title" class="script">Hello, you.</h2>
+        <p class="typewriter">
+          I'm Giselle! I love figuring out how things work. When 
+          I'm not building something, you'll probably find me at a concert or
+          planning my next trip.
+        </p>
+        <p class="signature">xo, Giselle</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTENTS ============ -->
+    <section class="contents" aria-labelledby="contents-title">
+      <div class="section-head">
+        <h2 id="contents-title">In this issue</h2>
+        <p class="eyebrow">Contents</p>
+      </div>
+      <ol class="toc">
+        <li class="reveal">
+          <a href="about.html">
+            <span class="num">01</span>
+            <span class="name">About</span>
+            <span class="blurb">Coursework, skills &amp; the person behind the code</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="projects.html">
+            <span class="num">02</span>
+            <span class="name">Projects</span>
+            <span class="blurb">Five builds, from PCBs to hash engines</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="experience.html">
+            <span class="num">03</span>
+            <span class="name">Experience</span>
+            <span class="blurb">Teaching STEM &amp; research in optics</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="contact.html">
+            <span class="num">04</span>
+            <span class="name">Contact</span>
+            <span class="blurb">Say hi: emails, links &amp; a message form</span>
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ FEATURED STORIES ============ -->
+    <section class="featured" aria-labelledby="featured-title">
+      <div class="featured-inner">
+        <div class="section-head">
+          <h2 id="featured-title">Featured stories</h2>
+          <p class="eyebrow">Things I've built</p>
+        </div>
+        <div class="stories">
+          <a class="story reveal" href="projects.html#privtag">
+            <span class="story-num">1</span>
+            <p class="eyebrow">CSE 190 · Embedded</p>
+            <h3>PrivTag, the low-power Bluetooth tag</h3>
+            <p>Firmware that notices when an item is left behind and alerts your phone, all on a tiny power budget.</p>
+            <span class="more">Read the story →</span>
+          </a>
+          <a class="story reveal" href="projects.html#assistive-routine-device">
+            <span class="story-num">2</span>
+            <p class="eyebrow">ECE 196 · Hardware</p>
+            <h3>A handheld device with a custom PCB</h3>
+            <p>Designed the board in KiCad, soldered it, and wrote the touchscreen interface.</p>
+            <span class="more">Read the story →</span>
+          </a>
+          <a class="story reveal" href="projects.html#vehicle-steering-control">
+            <span class="story-num">3</span>
+            <p class="eyebrow">ECE 171A · Controls</p>
+            <h3>Steering a car with PID &amp; lead-lag control</h3>
+            <p>Two controllers, one steering plant, and a lot of Bode plots.</p>
+            <span class="more">Read the story →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLASSIFIEDS ============ -->
+    <section class="seeking" aria-labelledby="seeking-title">
+      <div class="seeking-card reveal">
+        <p class="eyebrow">Classifieds</p>
+        <h2 id="seeking-title">Now seeking: a team that needs a <em>software engineer</em> &amp; <em>data analyst</em></h2>
+        <p>
+          I'm graduating in June 2027 and looking for internships and full-time roles
+          where I can pair computer science with my economics minor. I'm also
+          drawn to embedded systems.
+        </p>
+        <a class="btn" href="contact.html">Let's talk</a>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <hr>
+  <footer class="site-footer">
+    <p class="script">thanks for reading</p>
     <address class="social-icons">
-      <a href="https://www.linkedin.com/in/giselle-mendoza" target="_blank" rel="noopener noreferrer">
+      <a href="https://linkedin.com/in/giselle-mendoza" target="_blank" rel="noopener noreferrer">
         <img src="linkedin-light.svg" alt="LinkedIn" width="32" height="32">
       </a>
       <a href="mailto:g1mendoza@ucsd.edu">
@@ -82,9 +217,8 @@
         <img src="github-light.svg" alt="GitHub" width="32" height="32">
       </a>
     </address>
-    <p>&copy; 2026 Giselle Mendoza. All rights reserved.</p>
+    <p class="fine">&copy; 2026 Giselle Mendoza. All rights reserved.</p>
   </footer>
-
 
   <script src="jas.js"></script>
 </body>

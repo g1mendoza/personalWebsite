@@ -93,3 +93,23 @@ if (siteHeader) {
     siteHeader.classList.toggle("scrolled", window.scrollY > 20);
   });
 }
+
+// Fade things in as they scroll into view (anything with class="reveal").
+// Cards that projects.js builds later handle their own fade-in.
+const revealItems = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window) {
+  const revealer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in");
+        revealer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealItems.forEach((el, i) => {
+    el.style.transitionDelay = (i % 3) * 90 + "ms";
+    revealer.observe(el);
+  });
+} else {
+  revealItems.forEach((el) => el.classList.add("in"));
+}

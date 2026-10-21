@@ -102,22 +102,18 @@ const topicNames = { embedded: "Embedded", controls: "Controls", hardware: "Hard
 function cardHTML(p, index) {
   return `
     <li class="project-item reveal" data-id="${p.id}" data-tags="${p.tags.join(" ")}" style="--i:${index}">
-      <article class="project-card tag-${p.tags[0]}">
-        <div class="project-banner">
-          <span class="project-course">${p.course}</span>
-          <span class="project-topic">${topicNames[p.tags[0]]}</span>
-        </div>
-        <div class="project-body">
-          <h3>${p.title}</h3>
-          <p class="project-summary">${p.summary}</p>
-          <ul class="chips" aria-label="Technologies used">
-            ${p.tech.slice(0, 3).map((t) => `<li>${t}</li>`).join("")}
-            ${p.tech.length > 3 ? `<li class="more">+${p.tech.length - 3} more</li>` : ""}
-          </ul>
-          <div class="project-foot">
-            <button type="button" class="learn-more">Learn more <span aria-hidden="true">→</span></button>
-            <span class="project-team">${p.team}</span>
-          </div>
+      <article class="project-card">
+        <span class="story-num">${String(index + 1).padStart(2, "0")}</span>
+        <p class="eyebrow">${p.course} · ${topicNames[p.tags[0]]}</p>
+        <h3>${p.title}</h3>
+        <p class="project-summary">${p.summary}</p>
+        <ul class="chips" aria-label="Technologies used">
+          ${p.tech.slice(0, 3).map((t) => `<li>${t}</li>`).join("")}
+          ${p.tech.length > 3 ? `<li class="more">+${p.tech.length - 3} more</li>` : ""}
+        </ul>
+        <div class="project-foot">
+          <button type="button" class="learn-more">Read the story <span aria-hidden="true">→</span></button>
+          <span class="project-team">${p.team}</span>
         </div>
       </article>
     </li>`;
@@ -131,14 +127,14 @@ if ("IntersectionObserver" in window) {
   const revealer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
+        entry.target.classList.add("in");
         revealer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.15 });
   items.forEach((item) => revealer.observe(item));
 } else {
-  items.forEach((item) => item.classList.add("visible"));
+  items.forEach((item) => item.classList.add("in"));
 }
 
 /* ---------- Filter bar ---------- */
